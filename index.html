@@ -6,44 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil Robotronik</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(function(){
+        $("#includedContent").load("navbar.html");
+      });
+    </script>
   </head>
   <body>
-    <section class="hero is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Bienvenue à Robotronik !
-              </h1>
-              <h2 class="subtitle is-4">
-                Robotronik, c’est LE club de robotique de Phelma !
-              </h2>
-            </div>
-            <div class="column">
-                <img src="public/logocrop.png">
-            </div>
+  <div id="includedContent"></div>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <div class="content has-text-justified">
+            <h3>À propos de nous</h3>
+            <p>
+              Une ambiance conviviale et un atelier équipé te permettront de développer et d’appliquer tes nouvelles compétences en mécanique, électronique et programmation. Imprimantes 3D et cartes programmables te permettront de participer aux events internationaux que sont la NXP Cup -une course réputée de voitures autonomes- et la Coupe de France -une série de matchs à thème confrontant deux robots construits pendant l’année.
+              <br><br>
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LEMwBFg4eR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="public/téléchargement.jpeg">
           </div>
         </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content has-text-justified">
-              <h3>À propos de nous</h3>
-              <p>
-                Une ambiance conviviale et un atelier équipé te permettront de développer et d’appliquer tes nouvelles compétences en mécanique, électronique et programmation. Imprimantes 3D et cartes programmables te permettront de participer aux events internationaux que sont la NXP Cup -une course réputée de voitures autonomes- et la Coupe de France -une série de matchs à thème confrontant deux robots construits pendant l’année.
-                <br><br>
-                <strong>Profite de tes vacances et rejoins-nous !</strong>
-              </p>
-              <img src="public/téléchargement.jpeg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script type="text/javascript" src="lib/main.js"></script>
+    </div>
+  </section>
+  <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>
